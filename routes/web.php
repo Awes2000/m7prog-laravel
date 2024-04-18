@@ -36,7 +36,9 @@ Route::middleware('auth')->group(function () {
 
 
 });
-    Route::get('/about', [AboutController::class, 'index'])->name('about');
 
+    Route::get('/about', [AboutController::class, 'index'])->name('about');
+    Route::get('/contact', [AboutController::class, 'index'])->name('contact');
+    
 
 require __DIR__.'/auth.php';
